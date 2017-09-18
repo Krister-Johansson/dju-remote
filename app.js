@@ -27,7 +27,7 @@ const addToQueue = (uri) => {
     return new Promise((resolve, reject) => {
         spotify.currentlyPlaying()
             .then(x => {
-                const id = x.item.id
+                const songId = x.item.id
                 const user = x.context.uri.split(':')[2]
                 const playlist = x.context.uri.split(':')[4]
 
@@ -36,7 +36,7 @@ const addToQueue = (uri) => {
                         return x.track.id
                     }))
                     .then(items => items.findIndex((x) => {
-                        return x == id
+                        return x == songId
                     }))
                     .then(position => {
                         spotify.addTracks(user, playlist, position + 1, uri)
