@@ -1,0 +1,23 @@
+{
+  "name": "dju-remote",
+  "version": "1.0.0",
+  "description": "DJU REMOTE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krister-Johansson/dju-remote.git"
+  },
+  "author": "Krister Johansson <krister.johansson86@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Krister-Johansson/dju-remote/issues"
+  },
+  "homepage": "https://github.com/Krister-Johansson/dju-remote#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
